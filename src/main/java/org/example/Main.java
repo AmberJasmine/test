@@ -1,22 +1,27 @@
 package org.example;
 
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        long l = System.currentTimeMillis();
 
-        double[] a = {1.356, 2.15, 36, 49, 5};
-        double[] b = {5, 445.3214, 398, 2, 1};
-
-        double variance = variance(a);
-        System.out.println("variance = " + variance);
-        double standardDeviation = standardDeviation(a);
-        System.out.println("standardDeviation = " + standardDeviation);
-
-        double yb = ybStandardDeviation(a);
-        System.out.println("yb = " + yb);
-        double zt = ztStandardDeviation(a);
-        System.out.println("zt = " + zt);
+//        double[] a = {1.356, 2.15, 36, 49, 5};
+//        double[] b = {5, 445.3214, 398, 2, 1};
+//
+//        double variance = variance(a);
+//        System.out.println("variance = " + variance);
+//        double standardDeviation = standardDeviation(a);
+//        System.out.println("standardDeviation = " + standardDeviation);
+//
+//        double yb = ybStandardDeviation(a);
+//        System.out.println("yb = " + yb);
+//        double zt = ztStandardDeviation(a);
+//        System.out.println("zt = " + zt);
 
     }
 
@@ -74,6 +79,7 @@ public class Main {
 
     /**
      * 【计算总体标准偏差】
+     *
      * @param data data
      * @return double
      */
